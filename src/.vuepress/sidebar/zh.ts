@@ -1,0 +1,28 @@
+import { sidebar } from "vuepress-theme-hope";
+
+export const zhSidebar = sidebar({
+  "/zh/guide/": "structure",
+  "/zh/config/": "structure",
+  "/zh/faq/": "structure",
+  "/zh/": [
+    "",
+    {
+      text: "使用指南",
+      icon: "iconfont icon-creative",
+      prefix: "guide/",
+      children: ["api/", "install/", "drivers/", "advanced/"],
+    },
+    {
+      text: "配置",
+      icon: "iconfont icon-config",
+      prefix: "config/",
+      children: ["", "configuration"],
+    },
+    {
+      text: "常见问题",
+      icon: "iconfont icon-question",
+      prefix: "faq/",
+      children: ["howto", "why"],
+    },
+  ],
+});
